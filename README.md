@@ -1,16 +1,20 @@
 # alienvaulturls
 Accept line-delimited domains on stdin, fetch known URLs from the AlienVault OTX for `*.domain` and output them on stdout.
 
-Usage example:
-
-```
-▶ cat domains.txt | alienvaulturls > urls
-```
-
-Install:
+## Installation:
 
 ```
 ▶ go get github.com/antuache/alienvaulturls
+```
+
+## Usage:
+
+Go to https://otx.alienvault.com/settings and grab the "OTX Key".
+
+```
+▶ export OTX="insert_api_key_here"
+
+▶ cat domains.txt | alienvaulturls > urls
 ```
 
 ## Credit
