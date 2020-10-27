@@ -1,5 +1,5 @@
 # alienvaulturls
-Accept line-delimited domains on stdin, fetch known URLs from the AlienVault OTX for `*.domain` and output them on stdout.
+Accept line-delimited domains on stdin, fetch known URLs from the AlienVault OTX for `domain` and output them on stdout.
 
 ## Installation:
 
