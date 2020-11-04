@@ -116,8 +116,7 @@ func getAlienvaultURLs(domain string) ([]wurl, error) {
 	for wrapper.HasNext == true {
 		client := &http.Client{}
 
-		// 10/27/2020 - 'limit' and 'page' params are switched in the API
-		url := fmt.Sprintf("https://otx.alienvault.com/otxapi/indicator/domain/url_list/%s?limit=%d&page=50", domain, page)
+		url := fmt.Sprintf("https://otx.alienvault.com/otxapi/indicator/domain/url_list/%s?limit=50&page=%d", domain, page)
 		req, err := http.NewRequest("GET", url, nil)
 
 		req.Header.Add("X-OTX-API-KEY", os.Getenv("OTX"))
